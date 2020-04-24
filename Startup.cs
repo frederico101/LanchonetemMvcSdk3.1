@@ -9,7 +9,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
-namespace LanchoneteMvcSdk3._1
+namespace Lanchonete
 {
     public class Startup
     {

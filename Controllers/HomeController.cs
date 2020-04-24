@@ -5,9 +5,9 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using LanchoneteMvcSdk3._1.Models;
+using Lanchonete.Models;
 
-namespace LanchoneteMvcSdk3._1.Controllers
+namespace Lanchonete.Controllers
 {
     public class HomeController : Controller
     {

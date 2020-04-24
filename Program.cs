@@ -7,7 +7,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 
-namespace LanchoneteMvcSdk3._1
+namespace Lanchonete
 {
     public class Program
     {

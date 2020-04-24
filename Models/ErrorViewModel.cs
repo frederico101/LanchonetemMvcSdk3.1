@@ -1,6 +1,6 @@
 using System;
 
-namespace LanchoneteMvcSdk3._1.Models
+namespace Lanchonete.Models
 {
     public class ErrorViewModel
     {
