@@ -1,0 +1,16 @@
+@using Lanchonete.Models
+@model IEnumerable<Lanche>
+
+<h2>Menu</h2>
+
+@foreach(var lanche in Model)
+{
+    <div> 
+         <h4> lanche :  @lanche.Nome </h4>
+         <p><img src="@lanche.ImagemUrl"/></p>
+         <p>Preço: @lanche.Preco.ToString("c2")</p>
+    </div>
+}
+
+
+

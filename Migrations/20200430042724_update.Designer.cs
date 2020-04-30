@@ -9,8 +9,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Lanchonete.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20200424195825_PopularTabela")]
-    partial class PopularTabela
+    [Migration("20200430042724_update")]
+    partial class update
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
