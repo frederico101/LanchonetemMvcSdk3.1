@@ -1,8 +1,10 @@
-using System;
+
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Lanchonete.Context;
+using Lanchonete.Repositories;
+//using Lanchonete.Context;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -28,6 +30,10 @@ namespace Lanchonete
     
             services.AddDbContext<AppDbContext>(options =>
             options.UseSqlServer(Configuration.GetConnectionString("SqlServer")));
+            services.AddTransient<ILancheRepository, LancheRepository>();
+            services.AddTransient<ICategoriaRepository, CategoriaRepository>();
+            
+            
             services.AddControllersWithViews();       
         }
 
@@ -37,6 +43,7 @@ namespace Lanchonete
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
+                
             }
             else
             {
